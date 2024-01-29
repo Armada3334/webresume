@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Jeremy MacRoberts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-dark text-white">
+
+    <!-- Navbar (You can reuse your existing navbar code here) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <!-- Logo as a navbar brand -->
+          <a class="navbar-brand" href="#">
+              <img src="content/suitjeremy.jpg" alt="Logo" class="rounded-circle" style="height: 50px; width: 50px; object-fit: cover;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                  </li>
+              </ul>
+
+              <!-- New ul for icons -->
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="tel:+12197795807">>
+                          <img src="content/phone.svg" alt="Phone Link">
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="mailto:contact@jeremymacroberts.com">>
+                          <img src="content/envelope.svg" alt="Email Link">
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://www.linkedin.com/in/jeremy-macroberts">
+                          <img src="content/linkedin.svg" alt="LinkedIn">
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://github.com/Armada3334">
+                          <img src="content/github.svg" alt="GitHub">
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+    <!-- Blog Header -->
+    <header class="bg-dark text-white text-center py-5 mb-4">
+        <div class="container">
+            <h1>Jeremy's Blog</h1>
+            <p class="lead">Insights, Stories, and More</p>
+        </div>
+    </header>
+
+    <!-- Blog Posts Section -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Example Blog Post -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white">
+                    <img src="content/resumepost.png" class="card-img-top" alt="Blog Post Image">
+                    <div class="card-body">
+                        <h5 class="card-title">My Webresume</h5>
+                        <p class="card-text">To show my skills properly, I've created a web resume as a showcase for projects and things about myself.</p>
+                        <a href="posts/webresume.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for each blog post -->
+        </div>
+    </div>
+
+
+    <!-- Footer (You can reuse your existing footer code here) -->
+    <footer class="bg-dark text-white">
+        <!-- Footer content -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

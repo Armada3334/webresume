@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Making of My Web Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-white">
+
+    <!-- Navbar (reuse your existing navbar code here) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Logo as a navbar brand -->
+            <a class="navbar-brand" href="#">
+                <img src="../content/suitjeremy.jpg" alt="Logo" class="rounded-circle" style="height: 50px; width: 50px; object-fit: cover;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../blog.html">Blog</a>
+                    </li>
+                </ul>
+  
+                <!-- New ul for icons -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="tel:+12197795807">>
+                            <img src="../content/phone.svg" alt="Phone Link">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:contact@jeremymacroberts.com">>
+                            <img src="../content/envelope.svg" alt="Email Link">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/jeremy-macroberts">
+                            <img src="../content/linkedin.svg" alt="LinkedIn">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/Armada3334">
+                            <img src="../content/github.svg" alt="GitHub">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card shadow-sm">
+                    <div class="card-body bg-dark text-white">
+                        <h1 class="card-title text-center">The Making of My Web Resume</h1>
+                        <p class="text-muted text-center mb-4">Published on [Date]</p>
+                        <img src="../content/resumecode.png" class="card-img-top mb-3" alt="Code for web resume">
+
+                        <p>
+                            I've wanted to make a web resume for a while now, and I did actually make one using a wordpress template.
+                            But even though I was proud of self hosting it, I felt it didn't really represent what I could do.
+                            That, and I wanted to get better at front end development, so I decided to make my own.
+                        </p>
+                        <p>
+                            <strong>Initial Concept and Design:</strong> 
+                            The first phase involved coming up with the layout and design. 
+                            I really wanted to avoid feature creep or things getting so complicated that a single addition would break everything.
+                            So instead, with a bit of bootstrap, and a lot of copy and pasting off of stack overflow, I came up with a simple design.
+                            In the past for a customer I had used bootstrap and free to use icons to make a nav bar, so I decided to do the same here.
+                            In addition to the nav bar, a lot of other code was pulled from that project, but I did have to rewrite most of it to make it work (thanks chatGPT for the help!).
+                        </p>
+                        <p>
+                            <strong>Choosing the Right Tools:</strong> 
+                            I could have chosen to use a framework like React or Angular, but I decided to stick with HTML, CSS, and JS.
+                            Sure, having to bang your head against the wall for hours to figure out why the bottom half of your page for some insane reason will NOT adhere to your darkmode scheme is annoying,
+                            the reward of finding out that you had one line in your CSS that was the problem was still not worth it. I only kid, I actually really enjoyed making this thing. But with bootstrap and basic HTML/CSS/JS, I think it turned out pretty well.
+                        </p>
+                        <p>
+                            <strong>Development and Challenges:</strong> 
+                            I hate CSS, oh my gosh. I spent so much debugging time just to find out that one line broke everything.
+                        </p>
+                        <p>
+                            <strong>Final Touches and Launch:</strong> 
+                            I really wanted to make sure I didn't have to fight with an oracle VM again, and I didn't think it cool enough to use github pages, and I also already had my own domain name.
+                            This lead me to choose Azure as my hosting platform. With Azure static webapps I can push my code to github and it will automatically build and deploy my site.
+                            <br>
+                            <a href="https://github.com/Armada3334/webresume" class="btn btn-light">Here's the link to the repo</a>
+                        </p>
+                        <p>
+                            I'm pretty happy with where this webresume is, and I'm really excited to continue adding to it and making it better. Thanks for reading!
+                        </p>
+
+                        <p class="text-center mt-4">
+                            <a href="../blog.html" class="btn btn-primary">Back to Blog</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (reuse your existing footer code here) -->
+    <footer class="bg-dark text-white mt-5">
+        <!-- Footer content -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
